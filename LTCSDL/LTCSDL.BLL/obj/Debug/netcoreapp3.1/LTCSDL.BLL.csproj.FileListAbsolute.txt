@@ -1,0 +1,5 @@
+C:\Users\Administrator\Desktop\LTCSDL_TH71_Nhom19\LTCSDL\LTCSDL.BLL\bin\Debug\netcoreapp3.1\LTCSDL.BLL.deps.json
+C:\Users\Administrator\Desktop\LTCSDL_TH71_Nhom19\LTCSDL\LTCSDL.BLL\bin\Debug\netcoreapp3.1\LTCSDL.BLL.dll
+C:\Users\Administrator\Desktop\LTCSDL_TH71_Nhom19\LTCSDL\LTCSDL.BLL\obj\Debug\netcoreapp3.1\LTCSDL.BLL.csprojAssemblyReference.cache
+C:\Users\Administrator\Desktop\LTCSDL_TH71_Nhom19\LTCSDL\LTCSDL.BLL\obj\Debug\netcoreapp3.1\LTCSDL.BLL.AssemblyInfoInputs.cache
+C:\Users\Administrator\Desktop\LTCSDL_TH71_Nhom19\LTCSDL\LTCSDL.BLL\obj\Debug\netcoreapp3.1\LTCSDL.BLL.AssemblyInfo.cs

@@ -5046,11 +5046,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Administrator\\Desktop\\LTCSDL_TH71_Nhom19\\LTCSDL\\LTCSDL.BILL\\LTCSDL.BILL.csproj",
-      "projectName": "LTCSDL.BILL",
-      "projectPath": "C:\\Users\\Administrator\\Desktop\\LTCSDL_TH71_Nhom19\\LTCSDL\\LTCSDL.BILL\\LTCSDL.BILL.csproj",
+      "projectUniqueName": "C:\\Users\\Administrator\\Desktop\\LTCSDL_TH71_Nhom19\\LTCSDL\\LTCSDL.BLL\\LTCSDL.BLL.csproj",
+      "projectName": "LTCSDL.BLL",
+      "projectPath": "C:\\Users\\Administrator\\Desktop\\LTCSDL_TH71_Nhom19\\LTCSDL\\LTCSDL.BLL\\LTCSDL.BLL.csproj",
       "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Administrator\\Desktop\\LTCSDL_TH71_Nhom19\\LTCSDL\\LTCSDL.BILL\\obj\\",
+      "outputPath": "C:\\Users\\Administrator\\Desktop\\LTCSDL_TH71_Nhom19\\LTCSDL\\LTCSDL.BLL\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -32,7 +32,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\LTCSDL.BILL\LTCSDL.BILL.csproj" />
+    <ProjectReference Include="..\LTCSDL.BILL\LTCSDL.BLL.csproj" />
     <ProjectReference Include="..\LTCSDL.Common\LTCSDL.Common.csproj" />
     <ProjectReference Include="..\LTCSDL.DAL\LTCSDL.DAL.csproj" />
   </ItemGroup>
