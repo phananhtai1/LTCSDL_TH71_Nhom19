@@ -1,0 +1,15 @@
+C:\Users\Administrator\Desktop\LTCSDL_TH71_Nhom19\LTCSDL\LTCSDL.DAL\bin\Debug\netcoreapp3.1\LTCSDL.DAL.deps.json
+C:\Users\Administrator\Desktop\LTCSDL_TH71_Nhom19\LTCSDL\LTCSDL.DAL\bin\Debug\netcoreapp3.1\LTCSDL.DAL.dll
+C:\Users\Administrator\Desktop\LTCSDL_TH71_Nhom19\LTCSDL\LTCSDL.DAL\obj\Debug\netcoreapp3.1\LTCSDL.DAL.csprojAssemblyReference.cache
+C:\Users\Administrator\Desktop\LTCSDL_TH71_Nhom19\LTCSDL\LTCSDL.DAL\obj\Debug\netcoreapp3.1\LTCSDL.DAL.AssemblyInfoInputs.cache
+C:\Users\Administrator\Desktop\LTCSDL_TH71_Nhom19\LTCSDL\LTCSDL.DAL\obj\Debug\netcoreapp3.1\LTCSDL.DAL.AssemblyInfo.cs
+C:\Users\Administrator\Desktop\LTCSDL_TH71_Nhom19\LTCSDL\LTCSDL.DAL\bin\Debug\netcoreapp3.1\LTCSDL.DAL.runtimeconfig.json
+C:\Users\Administrator\Desktop\LTCSDL_TH71_Nhom19\LTCSDL\LTCSDL.DAL\bin\Debug\netcoreapp3.1\LTCSDL.DAL.runtimeconfig.dev.json
+C:\Users\Administrator\Desktop\LTCSDL_TH71_Nhom19\LTCSDL\LTCSDL.DAL\bin\Debug\netcoreapp3.1\LTCSDL.DAL.pdb
+C:\Users\Administrator\Desktop\LTCSDL_TH71_Nhom19\LTCSDL\LTCSDL.DAL\obj\Debug\netcoreapp3.1\LTCSDL.DAL.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\LTCSDL_TH71_Nhom19\LTCSDL\LTCSDL.DAL\obj\Debug\netcoreapp3.1\LTCSDL.DAL.dll
+C:\Users\Administrator\Desktop\LTCSDL_TH71_Nhom19\LTCSDL\LTCSDL.DAL\obj\Debug\netcoreapp3.1\LTCSDL.DAL.pdb
+C:\Users\Administrator\Desktop\LTCSDL_TH71_Nhom19\LTCSDL\LTCSDL.DAL\obj\Debug\netcoreapp3.1\LTCSDL.DAL.genruntimeconfig.cache
+C:\Users\Administrator\Desktop\LTCSDL_TH71_Nhom19\LTCSDL\LTCSDL.DAL\bin\Debug\netcoreapp3.1\LTCSDL.Common.dll
+C:\Users\Administrator\Desktop\LTCSDL_TH71_Nhom19\LTCSDL\LTCSDL.DAL\bin\Debug\netcoreapp3.1\LTCSDL.Common.pdb
+C:\Users\Administrator\Desktop\LTCSDL_TH71_Nhom19\LTCSDL\LTCSDL.DAL\obj\Debug\netcoreapp3.1\LTCSDL.DAL.csproj.CopyComplete
