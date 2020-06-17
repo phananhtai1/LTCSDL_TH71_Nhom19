@@ -55,20 +55,21 @@ namespace LTCSDL.DAL.Models
 
             modelBuilder.Entity<KyNangTuyenDung>(entity =>
             {
-                entity.HasKey(e => e.MaKyNangTuyenDung);
+                entity.HasKey(e => new { e.MaTuyenDung, e.MaKyNang })
+                    .HasName("PK_KyNang_TuyenDung_1");
 
                 entity.ToTable("KyNang_TuyenDung");
-
-                entity.Property(e => e.MaKyNangTuyenDung).HasColumnName("MaKyNang_TuyenDung");
 
                 entity.HasOne(d => d.MaKyNangNavigation)
                     .WithMany(p => p.KyNangTuyenDung)
                     .HasForeignKey(d => d.MaKyNang)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("FK_KyNang_TuyenDung_KyNang");
 
                 entity.HasOne(d => d.MaTuyenDungNavigation)
                     .WithMany(p => p.KyNangTuyenDung)
                     .HasForeignKey(d => d.MaTuyenDung)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("FK_KyNang_TuyenDung_ThongTinTuyenDung");
             });
 

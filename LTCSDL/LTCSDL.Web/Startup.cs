@@ -8,7 +8,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
 using System;
 
-namespace LTCSDL_ViecLamIT
+namespace LTCSDL.Web
 {
     public class Startup
     {
@@ -28,7 +28,6 @@ namespace LTCSDL_ViecLamIT
             {
                 configuration.RootPath = "ClientApp/dist";
             });
-
             #region swagger
             var inf1 = new OpenApiInfo
             {
@@ -87,7 +86,6 @@ namespace LTCSDL_ViecLamIT
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
-
             #region -- Swagger --
             app.UseSwagger();
             app.UseSwaggerUI(c =>
@@ -96,7 +94,6 @@ namespace LTCSDL_ViecLamIT
                 c.SwaggerEndpoint("/swagger/v2/swagger.json", "API v2.0");
             });
             #endregion
-
             app.UseCors(p => p.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod());
 
             app.UseHttpsRedirection();

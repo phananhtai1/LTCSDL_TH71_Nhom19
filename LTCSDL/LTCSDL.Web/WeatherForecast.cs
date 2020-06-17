@@ -1,6 +1,6 @@
 using System;
 
-namespace LTCSDL_ViecLamIT
+namespace LTCSDL.Web
 {
     public class WeatherForecast
     {

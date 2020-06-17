@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
-namespace LTCSDL_ViecLamIT.Controllers
+namespace LTCSDL.Web.Controllers
 {
     [ApiController]
     [Route("[controller]")]

@@ -7,7 +7,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
-namespace LTCSDL_ViecLamIT
+namespace LTCSDL.Web
 {
     public class Program
     {

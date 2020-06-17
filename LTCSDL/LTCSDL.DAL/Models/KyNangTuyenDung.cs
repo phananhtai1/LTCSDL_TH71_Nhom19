@@ -5,9 +5,8 @@ namespace LTCSDL.DAL.Models
 {
     public partial class KyNangTuyenDung
     {
-        public int MaKyNangTuyenDung { get; set; }
-        public int? MaTuyenDung { get; set; }
-        public int? MaKyNang { get; set; }
+        public int MaTuyenDung { get; set; }
+        public int MaKyNang { get; set; }
 
         public virtual KyNang MaKyNangNavigation { get; set; }
         public virtual ThongTinTuyenDung MaTuyenDungNavigation { get; set; }
