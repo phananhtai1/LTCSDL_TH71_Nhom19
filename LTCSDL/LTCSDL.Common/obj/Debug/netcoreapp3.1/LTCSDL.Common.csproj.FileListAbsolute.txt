@@ -7,3 +7,12 @@ C:\Users\Administrator\Desktop\LTCSDL_TH71_Nhom19\LTCSDL\LTCSDL.Common\bin\Debug
 C:\Users\Administrator\Desktop\LTCSDL_TH71_Nhom19\LTCSDL\LTCSDL.Common\obj\Debug\netcoreapp3.1\LTCSDL.Common.csproj.CoreCompileInputs.cache
 C:\Users\Administrator\Desktop\LTCSDL_TH71_Nhom19\LTCSDL\LTCSDL.Common\obj\Debug\netcoreapp3.1\LTCSDL.Common.dll
 C:\Users\Administrator\Desktop\LTCSDL_TH71_Nhom19\LTCSDL\LTCSDL.Common\obj\Debug\netcoreapp3.1\LTCSDL.Common.pdb
+C:\Users\OS\Desktop\LTCSDL_TH71_Nhom19\LTCSDL\LTCSDL.Common\bin\Debug\netcoreapp3.1\LTCSDL.Common.deps.json
+C:\Users\OS\Desktop\LTCSDL_TH71_Nhom19\LTCSDL\LTCSDL.Common\bin\Debug\netcoreapp3.1\LTCSDL.Common.dll
+C:\Users\OS\Desktop\LTCSDL_TH71_Nhom19\LTCSDL\LTCSDL.Common\bin\Debug\netcoreapp3.1\LTCSDL.Common.pdb
+C:\Users\OS\Desktop\LTCSDL_TH71_Nhom19\LTCSDL\LTCSDL.Common\obj\Debug\netcoreapp3.1\LTCSDL.Common.csprojAssemblyReference.cache
+C:\Users\OS\Desktop\LTCSDL_TH71_Nhom19\LTCSDL\LTCSDL.Common\obj\Debug\netcoreapp3.1\LTCSDL.Common.AssemblyInfoInputs.cache
+C:\Users\OS\Desktop\LTCSDL_TH71_Nhom19\LTCSDL\LTCSDL.Common\obj\Debug\netcoreapp3.1\LTCSDL.Common.AssemblyInfo.cs
+C:\Users\OS\Desktop\LTCSDL_TH71_Nhom19\LTCSDL\LTCSDL.Common\obj\Debug\netcoreapp3.1\LTCSDL.Common.csproj.CoreCompileInputs.cache
+C:\Users\OS\Desktop\LTCSDL_TH71_Nhom19\LTCSDL\LTCSDL.Common\obj\Debug\netcoreapp3.1\LTCSDL.Common.dll
+C:\Users\OS\Desktop\LTCSDL_TH71_Nhom19\LTCSDL\LTCSDL.Common\obj\Debug\netcoreapp3.1\LTCSDL.Common.pdb

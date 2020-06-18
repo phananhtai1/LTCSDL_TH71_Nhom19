@@ -5020,19 +5020,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Administrator\\.nuget\\packages\\": {}
+    "C:\\Users\\OS\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Administrator\\Desktop\\LTCSDL_TH71_Nhom19\\LTCSDL\\LTCSDL.DAL\\LTCSDL.DAL.csproj",
+      "projectUniqueName": "C:\\Users\\OS\\Desktop\\LTCSDL_TH71_Nhom19\\LTCSDL\\LTCSDL.DAL\\LTCSDL.DAL.csproj",
       "projectName": "LTCSDL.DAL",
-      "projectPath": "C:\\Users\\Administrator\\Desktop\\LTCSDL_TH71_Nhom19\\LTCSDL\\LTCSDL.DAL\\LTCSDL.DAL.csproj",
-      "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Administrator\\Desktop\\LTCSDL_TH71_Nhom19\\LTCSDL\\LTCSDL.DAL\\obj\\",
+      "projectPath": "C:\\Users\\OS\\Desktop\\LTCSDL_TH71_Nhom19\\LTCSDL\\LTCSDL.DAL\\LTCSDL.DAL.csproj",
+      "packagesPath": "C:\\Users\\OS\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\OS\\Desktop\\LTCSDL_TH71_Nhom19\\LTCSDL\\LTCSDL.DAL\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\OS\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5045,8 +5045,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\Administrator\\Desktop\\LTCSDL_TH71_Nhom19\\LTCSDL\\LTCSDL.Common\\LTCSDL.Common.csproj": {
-              "projectPath": "C:\\Users\\Administrator\\Desktop\\LTCSDL_TH71_Nhom19\\LTCSDL\\LTCSDL.Common\\LTCSDL.Common.csproj"
+            "C:\\Users\\OS\\Desktop\\LTCSDL_TH71_Nhom19\\LTCSDL\\LTCSDL.Common\\LTCSDL.Common.csproj": {
+              "projectPath": "C:\\Users\\OS\\Desktop\\LTCSDL_TH71_Nhom19\\LTCSDL\\LTCSDL.Common\\LTCSDL.Common.csproj"
             }
           }
         }
