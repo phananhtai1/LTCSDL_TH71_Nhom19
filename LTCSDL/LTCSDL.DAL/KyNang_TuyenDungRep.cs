@@ -11,7 +11,7 @@ using System.Text;
 
 namespace LTCSDL.DAL
 {
-    public class TTTuyenDungRep: GenericRep<ViecLamITContext, ThongTinTuyenDung>
+    public class KyNang_TuyenDungRep: GenericRep<ViecLamITContext, KyNangTuyenDung>
     {
         #region -- Overrides --
         /// <summary>
@@ -19,9 +19,9 @@ namespace LTCSDL.DAL
         /// </summary>
         /// <param name="id">Primary key</param>
         /// <returns>Return the object</returns>
-        public override ThongTinTuyenDung Read(int id)
+        public KyNangTuyenDung Read(int matd, int makn)
         {
-            var res = All.FirstOrDefault(p => p.MaTuyenDung == id);
+            var res = All.FirstOrDefault(p => p.MaTuyenDung == matd && p.MaKyNang == makn);
             return res;
         }
 
@@ -31,16 +31,16 @@ namespace LTCSDL.DAL
         /// </summary>
         /// <param name="id">Primary key</param>
         /// <returns>Number of affect</returns>
-        public int Remove(int id)
+        public int Remove(int matd, int makn)
         {
-            var m = base.All.First(i => i.MaTuyenDung == id);
+            var m = base.All.First(p => p.MaTuyenDung == matd && p.MaKyNang == makn);
             m = base.Delete(m); //TODO
             return m.MaTuyenDung;
         }
         #endregion
 
         #region -- Methods --
-        public SingleRsp CreateTTTuyenDung(ThongTinTuyenDung pro)
+        public SingleRsp CreateKyNangTuyenDung(int matd, int makn)
         {
             var res = new SingleRsp();
             using (var context = new ViecLamITContext())
@@ -49,7 +49,10 @@ namespace LTCSDL.DAL
                 {
                     try
                     {
-                        var t = context.ThongTinTuyenDung.Add(pro);
+                        KyNangTuyenDung kntd = new KyNangTuyenDung();
+                        kntd.MaTuyenDung = matd;
+                        kntd.MaKyNang = makn;
+                        var t = context.KyNangTuyenDung.Add(kntd);
                         context.SaveChanges();
                         tran.Commit();
                     }
@@ -63,7 +66,7 @@ namespace LTCSDL.DAL
             return res;
         }
 
-        public SingleRsp UpdateTTTuyenDung(ThongTinTuyenDung pro)
+        public SingleRsp DeleteKyNangTuyenDung(int matd, int makn)
         {
             var res = new SingleRsp();
             using (var context = new ViecLamITContext())
@@ -72,31 +75,7 @@ namespace LTCSDL.DAL
                 {
                     try
                     {
-                        var t = context.ThongTinTuyenDung.Update(pro);
-                        context.SaveChanges();
-                        tran.Commit();
-                    }
-                    catch (Exception ex)
-                    {
-                        tran.Rollback();
-                        res.SetError(ex.StackTrace);
-                    }
-                }
-            }
-            return res;
-        }
-
-        public SingleRsp DeleteTTTuyenDung(int matd)
-        {
-            var res = new SingleRsp();
-
-            using (var context = new ViecLamITContext())
-            {
-                using (var tran = context.Database.BeginTransaction())
-                {
-                    try
-                    {
-                        res.Data = context.ThongTinTuyenDung.Find(matd);
+                        res.Data = context.KyNangTuyenDung.FirstOrDefault(p => p.MaTuyenDung == matd && p.MaKyNang == makn);
                         context.Remove(res.Data);
                         context.SaveChanges();
                         tran.Commit();
@@ -111,21 +90,54 @@ namespace LTCSDL.DAL
             return res;
         }
 
-        public SingleRsp GetTTTuyenDungByMaCongTy(string macty)
+        public object DeleteKNTDByMaTD(int matd)
         {
-            var res = new SingleRsp();
-            res.Data = All.Where(p => p.MaCongTy == macty);
+            List<object> res = new List<object>();
+            var cnn = (SqlConnection)Context.Database.GetDbConnection();
+            if (cnn.State == ConnectionState.Closed)
+                cnn.Open();
+
+            try
+            {
+                SqlDataAdapter da = new SqlDataAdapter();
+                DataSet ds = new DataSet();
+                var cmd = cnn.CreateCommand();
+                cmd.CommandText = "delete from [ViecLamIT].[dbo].[KyNang_TuyenDung]where[MaTuyenDung] = @matuyendung";
+                cmd.Parameters.AddWithValue("@matuyendung", matd);;
+                da.SelectCommand = cmd;
+                da.Fill(ds);
+                if (ds.Tables.Count > 0 && ds.Tables[0].Rows.Count > 0)
+                {
+                    foreach (DataRow row in ds.Tables[0].Rows)
+                    {
+                        var x = new
+                        {
+                            MaTuyenDung = row["MaTuyenDung"],
+                            MaKyNang = row["MaKyNang"]
+
+                        };
+                        res.Add(x);
+                    }
+                }
+                else
+                    res = null;
+            }
+            catch (Exception ex)
+            {
+                res = null;
+            }
             return res;
         }
 
-        public SingleRsp GetTTTuyenDungByMaChucVu(int macvu)
+        public SingleRsp getByMaKyNang(int makn)
         {
             var res = new SingleRsp();
-            res.Data = All.Where(p => p.MaChucVu == macvu);
+            var t = All.Where(p => p.MaKyNang == makn);
+            res.Data = t;
             return res;
         }
 
-        public object getTTTDByTenCongTyOrTenChucVu(string kw)
+        public object getKNTDbyTenKyNang(string kw)
         {
             List<object> res = new List<object>();
             var cnn = (SqlConnection)Context.Database.GetDbConnection();
@@ -136,7 +148,7 @@ namespace LTCSDL.DAL
                 SqlDataAdapter da = new SqlDataAdapter();
                 DataSet ds = new DataSet();
                 var cmd = cnn.CreateCommand();
-                cmd.CommandText = "TKTheoTenChucVuVaTenCongTy";
+                cmd.CommandText = "XuatMaTuyenDungTheoTenKyNang";
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.AddWithValue("@keywork", kw);
                 da.SelectCommand = cmd;
@@ -148,12 +160,8 @@ namespace LTCSDL.DAL
                         var x = new
                         {
                             MaTuyenDung = row["MaTuyenDung"],
-                            MaCongTy = row["MaCongTy"],
-                            TenCongTy = row["TenCongTy"],
-                            TenChucVu = row["TenChucVu"],
-                            ThanhPho = row["ThanhPho"],
-                            MucLuong = row["MucLuong"],
-                            HanNopDon = row["HanNopDon"]
+                            MakyNang = row["MakyNang"],
+                            TenKyNang = row["TenKyNang"]
                         };
                         res.Add(x);
                     }
@@ -166,7 +174,7 @@ namespace LTCSDL.DAL
             return res;
         }
 
-        public object getTTTDByMaTuyenDung(int kw)
+        public object getKNTDbyMaTuyenDung(int key)
         {
             List<object> res = new List<object>();
             var cnn = (SqlConnection)Context.Database.GetDbConnection();
@@ -177,9 +185,9 @@ namespace LTCSDL.DAL
                 SqlDataAdapter da = new SqlDataAdapter();
                 DataSet ds = new DataSet();
                 var cmd = cnn.CreateCommand();
-                cmd.CommandText = "TKThongTinTuyenDungTheoMaTuyenDung";
+                cmd.CommandText = "XuatTTinKyNangTheoMaTuyenDung";
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@key", kw);
+                cmd.Parameters.AddWithValue("@key", key);
                 da.SelectCommand = cmd;
                 da.Fill(ds);
                 if (ds.Tables.Count > 0 && ds.Tables[0].Rows.Count > 0)
@@ -189,12 +197,8 @@ namespace LTCSDL.DAL
                         var x = new
                         {
                             MaTuyenDung = row["MaTuyenDung"],
-                            MaCongTy = row["MaCongTy"],
-                            TenCongTy = row["TenCongTy"],
-                            TenChucVu = row["TenChucVu"],
-                            ThanhPho = row["ThanhPho"],
-                            MucLuong = row["MucLuong"],
-                            HanNopDon = row["HanNopDon"]
+                            MakyNang = row["MakyNang"],
+                            TenKyNang = row["TenKyNang"]
                         };
                         res.Add(x);
                     }
@@ -206,6 +210,7 @@ namespace LTCSDL.DAL
             }
             return res;
         }
-        #endregion 
+
+        #endregion
     }
 }
