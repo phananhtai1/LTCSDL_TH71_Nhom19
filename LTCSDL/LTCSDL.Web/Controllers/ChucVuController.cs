@@ -19,7 +19,7 @@ namespace LTCSDL_ViecLamIT.Controllers
     {
         public ChucVuController()
         {
-            _svc = new ChucVusvc();
+            _svc = new ChucVuSvc();
         }
 
         [HttpPost("get-by-id")]
@@ -37,7 +37,30 @@ namespace LTCSDL_ViecLamIT.Controllers
             res.Data = _svc.All;
             return Ok(res);
         }
-        private readonly ChucVusvc _svc;
+
+        [HttpPost("create-chuc-vu")]
+        public IActionResult CreateChucVu([FromBody] ChucVuReq req)
+        {
+            var res = _svc.CreateChucVu(req);
+            return Ok(res);
+        }
+
+        [HttpPost("update-chuc-vu")]
+        public IActionResult UpdateChucVu([FromBody] ChucVuReq req)
+        {
+            var res = _svc.UpdateChucVu(req);
+            return Ok(res);
+        }
+
+        [HttpPost("search-chuc-vu")]
+        public IActionResult SearchChucVu([FromBody] SearchKyNangReq req)
+        {
+            var res = new SingleRsp();
+            var cv = _svc.SearchChucVu(req.KeyWord, req.Page, req.Size);
+            res.Data = cv;
+            return Ok(res);
+        }
+        private readonly ChucVuSvc _svc;
     }
 }
 

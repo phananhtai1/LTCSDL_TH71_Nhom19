@@ -7,6 +7,9 @@ namespace LTCSDL.BLL
 {
     using DAL;
     using DAL.Models;
+    using LTCSDL.Common.Req;
+    using System.Linq;
+
     public class KyNangSvc : GenericSvc<KyNangRep, KyNang>
     {
         public override SingleRsp Read(int id)
@@ -37,6 +40,45 @@ namespace LTCSDL.BLL
             return res;
         }
 
+        public SingleRsp CreateKyNang(KyNangReq ky)
+        {
+            var res = new SingleRsp();
+            KyNang kynang = new KyNang();
+            kynang.MakyNang = ky.MakyNang;
+            kynang.TenKyNang = ky.TenKyNang;
+            res = _rep.CreateKyNang(kynang);
+
+            return res;
+        }
+
+        public SingleRsp UpdateKyNang(KyNangReq ky)
+        {
+            var res = new SingleRsp();
+            KyNang kynang = new KyNang();
+            kynang.MakyNang = ky.MakyNang;
+            kynang.TenKyNang = ky.TenKyNang;
+            res = _rep.UpdateKyNang(kynang);
+
+            return res;
+        }
+
+        public object SearchKyNang(string keyword, int page, int size)
+        {
+            var ky = All.Where(x => x.TenKyNang.Contains(keyword));
+            var offset = (page - 1) * size;
+            var total = ky.Count();
+            int totalPage = (total % size) == 0 ? (int)(total % size) : (int)((total % size) + 1);
+            var data = ky.OrderBy(x => x.TenKyNang).Skip(offset).Take(size).ToList();
+            var res = new
+            {
+                Data = data,
+                TotalRecord = total,
+                TotalPage=totalPage,
+                Page = page,
+                Size = size
+            };
+            return res;
+        }
         public KyNangSvc() { }
     }
 }

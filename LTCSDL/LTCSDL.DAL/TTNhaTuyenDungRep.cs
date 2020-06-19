@@ -1,33 +1,29 @@
-﻿using System;
+﻿using LTCSDL.Common.DAL;
+using LTCSDL.DAL.Models;
+using System;
 using System.Collections.Generic;
-using LTCSDL.Common.DAL;
 using System.Text;
 
 namespace LTCSDL.DAL
 {
+
     using LTCSDL.Common.Rsp;
     using LTCSDL.DAL.Models;
     using Models;
     using System.Linq;
-    public class ChucVuRep : GenericRep<ViecLamITContext, ChucVu>
+    public class TTNhaTuyenDungRep : GenericRep<ViecLamITContext,ThongTinNhaTuyenDung>
     {
         #region --Overrides--
-        public override ChucVu Read(int id)
+        public override ThongTinNhaTuyenDung Read(string id)
         {
-            var res = All.FirstOrDefault(p => p.MaChucVu == id);
+            var res = All.FirstOrDefault(p => p.MaCongTy == id);
             return res;
         }
 
-        public int Remove(int id)
-        {
-            var m = base.All.First(i => i.MaChucVu == id);
-            m = base.Delete(m);
-            return m.MaChucVu;
-        }
         #endregion
 
         #region
-        public SingleRsp CreateChucVu(ChucVu chuc)
+        public SingleRsp CreateTTNTD(ThongTinNhaTuyenDung nhaTD)
         {
             var res = new SingleRsp();
             using (var context = new ViecLamITContext())
@@ -36,7 +32,7 @@ namespace LTCSDL.DAL
                 {
                     try
                     {
-                        var t = context.ChucVu.Add(chuc);
+                        var t = context.ThongTinNhaTuyenDung.Add(nhaTD);
                         context.SaveChanges();
                         tran.Commit();
                     }
@@ -49,7 +45,7 @@ namespace LTCSDL.DAL
             }
             return res;
         }
-        public SingleRsp UpdateChucVu(ChucVu chuc)
+        public SingleRsp UpdateTTNTD(ThongTinNhaTuyenDung nhaTD)
         {
             var res = new SingleRsp();
             using (var context = new ViecLamITContext())
@@ -58,7 +54,7 @@ namespace LTCSDL.DAL
                 {
                     try
                     {
-                        var t = context.ChucVu.Update(chuc);
+                        var t = context.ThongTinNhaTuyenDung.Update(nhaTD);
                         context.SaveChanges();
                         tran.Commit();
                     }

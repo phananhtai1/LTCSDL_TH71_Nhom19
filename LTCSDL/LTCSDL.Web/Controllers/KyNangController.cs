@@ -37,6 +37,29 @@ namespace LTCSDL_ViecLamIT.Controllers
             res.Data = _svc.All;
             return Ok(res);
         }
+
+        [HttpPost("create-ky-nang")]
+        public IActionResult CreateKyNang([FromBody] KyNangReq req)
+        {
+            var res = _svc.CreateKyNang(req);
+            return Ok(res);
+        }
+
+        [HttpPost("update-ky-nang")]
+        public IActionResult UpdateKyNang([FromBody] KyNangReq req)
+        {
+            var res = _svc.UpdateKyNang(req);
+            return Ok(res);
+        }
+
+        [HttpPost("search-ky-nang")]
+        public IActionResult SearchKyNang([FromBody] SearchKyNangReq req)
+        {
+            var res = new SingleRsp();
+            var ky = _svc.SearchKyNang(req.KeyWord,req.Page,req.Size);
+            res.Data = ky;
+            return Ok(res);
+        }
         private readonly KyNangSvc _svc;
     }
 }
