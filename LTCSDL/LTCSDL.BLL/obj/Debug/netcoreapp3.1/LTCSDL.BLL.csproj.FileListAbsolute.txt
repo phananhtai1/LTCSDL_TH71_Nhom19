@@ -15,6 +15,25 @@ C:\Users\Administrator\Desktop\LTCSDL_TH71_Nhom19\LTCSDL\LTCSDL.BLL\obj\Debug\ne
 C:\Users\Administrator\Desktop\LTCSDL_TH71_Nhom19\LTCSDL\LTCSDL.BLL\obj\Debug\netcoreapp3.1\LTCSDL.BLL.dll
 C:\Users\Administrator\Desktop\LTCSDL_TH71_Nhom19\LTCSDL\LTCSDL.BLL\obj\Debug\netcoreapp3.1\LTCSDL.BLL.pdb
 C:\Users\Administrator\Desktop\LTCSDL_TH71_Nhom19\LTCSDL\LTCSDL.BLL\obj\Debug\netcoreapp3.1\LTCSDL.BLL.genruntimeconfig.cache
+<<<<<<< HEAD
+C:\Users\Dy\Desktop\LTCSDL_TH71_Nhom19\LTCSDL\LTCSDL.BLL\bin\Debug\netcoreapp3.1\LTCSDL.BLL.deps.json
+C:\Users\Dy\Desktop\LTCSDL_TH71_Nhom19\LTCSDL\LTCSDL.BLL\bin\Debug\netcoreapp3.1\LTCSDL.BLL.runtimeconfig.json
+C:\Users\Dy\Desktop\LTCSDL_TH71_Nhom19\LTCSDL\LTCSDL.BLL\bin\Debug\netcoreapp3.1\LTCSDL.BLL.runtimeconfig.dev.json
+C:\Users\Dy\Desktop\LTCSDL_TH71_Nhom19\LTCSDL\LTCSDL.BLL\bin\Debug\netcoreapp3.1\LTCSDL.BLL.dll
+C:\Users\Dy\Desktop\LTCSDL_TH71_Nhom19\LTCSDL\LTCSDL.BLL\bin\Debug\netcoreapp3.1\LTCSDL.BLL.pdb
+C:\Users\Dy\Desktop\LTCSDL_TH71_Nhom19\LTCSDL\LTCSDL.BLL\bin\Debug\netcoreapp3.1\LTCSDL.Common.dll
+C:\Users\Dy\Desktop\LTCSDL_TH71_Nhom19\LTCSDL\LTCSDL.BLL\bin\Debug\netcoreapp3.1\LTCSDL.DAL.dll
+C:\Users\Dy\Desktop\LTCSDL_TH71_Nhom19\LTCSDL\LTCSDL.BLL\bin\Debug\netcoreapp3.1\LTCSDL.Common.pdb
+C:\Users\Dy\Desktop\LTCSDL_TH71_Nhom19\LTCSDL\LTCSDL.BLL\bin\Debug\netcoreapp3.1\LTCSDL.DAL.pdb
+C:\Users\Dy\Desktop\LTCSDL_TH71_Nhom19\LTCSDL\LTCSDL.BLL\obj\Debug\netcoreapp3.1\LTCSDL.BLL.csprojAssemblyReference.cache
+C:\Users\Dy\Desktop\LTCSDL_TH71_Nhom19\LTCSDL\LTCSDL.BLL\obj\Debug\netcoreapp3.1\LTCSDL.BLL.AssemblyInfoInputs.cache
+C:\Users\Dy\Desktop\LTCSDL_TH71_Nhom19\LTCSDL\LTCSDL.BLL\obj\Debug\netcoreapp3.1\LTCSDL.BLL.AssemblyInfo.cs
+C:\Users\Dy\Desktop\LTCSDL_TH71_Nhom19\LTCSDL\LTCSDL.BLL\obj\Debug\netcoreapp3.1\LTCSDL.BLL.csproj.CoreCompileInputs.cache
+C:\Users\Dy\Desktop\LTCSDL_TH71_Nhom19\LTCSDL\LTCSDL.BLL\obj\Debug\netcoreapp3.1\LTCSDL.BLL.csproj.CopyComplete
+C:\Users\Dy\Desktop\LTCSDL_TH71_Nhom19\LTCSDL\LTCSDL.BLL\obj\Debug\netcoreapp3.1\LTCSDL.BLL.dll
+C:\Users\Dy\Desktop\LTCSDL_TH71_Nhom19\LTCSDL\LTCSDL.BLL\obj\Debug\netcoreapp3.1\LTCSDL.BLL.pdb
+C:\Users\Dy\Desktop\LTCSDL_TH71_Nhom19\LTCSDL\LTCSDL.BLL\obj\Debug\netcoreapp3.1\LTCSDL.BLL.genruntimeconfig.cache
+=======
 C:\Users\OS\Desktop\LTCSDL_TH71_Nhom19\LTCSDL\LTCSDL.BLL\bin\Debug\netcoreapp3.1\LTCSDL.BLL.deps.json
 C:\Users\OS\Desktop\LTCSDL_TH71_Nhom19\LTCSDL\LTCSDL.BLL\bin\Debug\netcoreapp3.1\LTCSDL.BLL.runtimeconfig.json
 C:\Users\OS\Desktop\LTCSDL_TH71_Nhom19\LTCSDL\LTCSDL.BLL\bin\Debug\netcoreapp3.1\LTCSDL.BLL.runtimeconfig.dev.json
@@ -32,6 +51,7 @@ C:\Users\OS\Desktop\LTCSDL_TH71_Nhom19\LTCSDL\LTCSDL.BLL\obj\Debug\netcoreapp3.1
 C:\Users\OS\Desktop\LTCSDL_TH71_Nhom19\LTCSDL\LTCSDL.BLL\obj\Debug\netcoreapp3.1\LTCSDL.BLL.dll
 C:\Users\OS\Desktop\LTCSDL_TH71_Nhom19\LTCSDL\LTCSDL.BLL\obj\Debug\netcoreapp3.1\LTCSDL.BLL.pdb
 C:\Users\OS\Desktop\LTCSDL_TH71_Nhom19\LTCSDL\LTCSDL.BLL\obj\Debug\netcoreapp3.1\LTCSDL.BLL.genruntimeconfig.cache
+>>>>>>> 008e90b56a41e4a6719e296afd90eab43ccf0d2d
 D:\LTCSDL_TH71_Nhom19\LTCSDL\LTCSDL.BLL\bin\Debug\netcoreapp3.1\LTCSDL.BLL.deps.json
 D:\LTCSDL_TH71_Nhom19\LTCSDL\LTCSDL.BLL\bin\Debug\netcoreapp3.1\LTCSDL.BLL.runtimeconfig.json
 D:\LTCSDL_TH71_Nhom19\LTCSDL\LTCSDL.BLL\bin\Debug\netcoreapp3.1\LTCSDL.BLL.runtimeconfig.dev.json
