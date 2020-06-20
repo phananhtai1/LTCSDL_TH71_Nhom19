@@ -1,26 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Dy\\Desktop\\LTCSDL_TH71_Nhom19\\LTCSDL\\LTCSDL.BLL\\LTCSDL.BLL.csproj": {}
+    "D:\\LTCSDL_TH71_Nhom19\\LTCSDL\\LTCSDL.BLL\\LTCSDL.BLL.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Dy\\Desktop\\LTCSDL_TH71_Nhom19\\LTCSDL\\LTCSDL.BLL\\LTCSDL.BLL.csproj": {
+    "D:\\LTCSDL_TH71_Nhom19\\LTCSDL\\LTCSDL.BLL\\LTCSDL.BLL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Dy\\Desktop\\LTCSDL_TH71_Nhom19\\LTCSDL\\LTCSDL.BLL\\LTCSDL.BLL.csproj",
+        "projectUniqueName": "D:\\LTCSDL_TH71_Nhom19\\LTCSDL\\LTCSDL.BLL\\LTCSDL.BLL.csproj",
         "projectName": "LTCSDL.BLL",
-        "projectPath": "C:\\Users\\Dy\\Desktop\\LTCSDL_TH71_Nhom19\\LTCSDL\\LTCSDL.BLL\\LTCSDL.BLL.csproj",
-        "packagesPath": "C:\\Users\\Dy\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Dy\\Desktop\\LTCSDL_TH71_Nhom19\\LTCSDL\\LTCSDL.BLL\\obj\\",
+        "projectPath": "D:\\LTCSDL_TH71_Nhom19\\LTCSDL\\LTCSDL.BLL\\LTCSDL.BLL.csproj",
+        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+        "outputPath": "D:\\LTCSDL_TH71_Nhom19\\LTCSDL\\LTCSDL.BLL\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Dy\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -32,11 +27,11 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\Dy\\Desktop\\LTCSDL_TH71_Nhom19\\LTCSDL\\LTCSDL.Common\\LTCSDL.Common.csproj": {
-                "projectPath": "C:\\Users\\Dy\\Desktop\\LTCSDL_TH71_Nhom19\\LTCSDL\\LTCSDL.Common\\LTCSDL.Common.csproj"
+              "D:\\LTCSDL_TH71_Nhom19\\LTCSDL\\LTCSDL.Common\\LTCSDL.Common.csproj": {
+                "projectPath": "D:\\LTCSDL_TH71_Nhom19\\LTCSDL\\LTCSDL.Common\\LTCSDL.Common.csproj"
               },
-              "C:\\Users\\Dy\\Desktop\\LTCSDL_TH71_Nhom19\\LTCSDL\\LTCSDL.DAL\\LTCSDL.DAL.csproj": {
-                "projectPath": "C:\\Users\\Dy\\Desktop\\LTCSDL_TH71_Nhom19\\LTCSDL\\LTCSDL.DAL\\LTCSDL.DAL.csproj"
+              "D:\\LTCSDL_TH71_Nhom19\\LTCSDL\\LTCSDL.DAL\\LTCSDL.DAL.csproj": {
+                "projectPath": "D:\\LTCSDL_TH71_Nhom19\\LTCSDL\\LTCSDL.DAL\\LTCSDL.DAL.csproj"
               }
             }
           }
@@ -84,23 +79,18 @@
         }
       }
     },
-    "C:\\Users\\Dy\\Desktop\\LTCSDL_TH71_Nhom19\\LTCSDL\\LTCSDL.Common\\LTCSDL.Common.csproj": {
+    "D:\\LTCSDL_TH71_Nhom19\\LTCSDL\\LTCSDL.Common\\LTCSDL.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Dy\\Desktop\\LTCSDL_TH71_Nhom19\\LTCSDL\\LTCSDL.Common\\LTCSDL.Common.csproj",
+        "projectUniqueName": "D:\\LTCSDL_TH71_Nhom19\\LTCSDL\\LTCSDL.Common\\LTCSDL.Common.csproj",
         "projectName": "LTCSDL.Common",
-        "projectPath": "C:\\Users\\Dy\\Desktop\\LTCSDL_TH71_Nhom19\\LTCSDL\\LTCSDL.Common\\LTCSDL.Common.csproj",
-        "packagesPath": "C:\\Users\\Dy\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Dy\\Desktop\\LTCSDL_TH71_Nhom19\\LTCSDL\\LTCSDL.Common\\obj\\",
+        "projectPath": "D:\\LTCSDL_TH71_Nhom19\\LTCSDL\\LTCSDL.Common\\LTCSDL.Common.csproj",
+        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+        "outputPath": "D:\\LTCSDL_TH71_Nhom19\\LTCSDL\\LTCSDL.Common\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Dy\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -147,23 +137,18 @@
         }
       }
     },
-    "C:\\Users\\Dy\\Desktop\\LTCSDL_TH71_Nhom19\\LTCSDL\\LTCSDL.DAL\\LTCSDL.DAL.csproj": {
+    "D:\\LTCSDL_TH71_Nhom19\\LTCSDL\\LTCSDL.DAL\\LTCSDL.DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Dy\\Desktop\\LTCSDL_TH71_Nhom19\\LTCSDL\\LTCSDL.DAL\\LTCSDL.DAL.csproj",
+        "projectUniqueName": "D:\\LTCSDL_TH71_Nhom19\\LTCSDL\\LTCSDL.DAL\\LTCSDL.DAL.csproj",
         "projectName": "LTCSDL.DAL",
-        "projectPath": "C:\\Users\\Dy\\Desktop\\LTCSDL_TH71_Nhom19\\LTCSDL\\LTCSDL.DAL\\LTCSDL.DAL.csproj",
-        "packagesPath": "C:\\Users\\Dy\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Dy\\Desktop\\LTCSDL_TH71_Nhom19\\LTCSDL\\LTCSDL.DAL\\obj\\",
+        "projectPath": "D:\\LTCSDL_TH71_Nhom19\\LTCSDL\\LTCSDL.DAL\\LTCSDL.DAL.csproj",
+        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+        "outputPath": "D:\\LTCSDL_TH71_Nhom19\\LTCSDL\\LTCSDL.DAL\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Dy\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -175,8 +160,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\Dy\\Desktop\\LTCSDL_TH71_Nhom19\\LTCSDL\\LTCSDL.Common\\LTCSDL.Common.csproj": {
-                "projectPath": "C:\\Users\\Dy\\Desktop\\LTCSDL_TH71_Nhom19\\LTCSDL\\LTCSDL.Common\\LTCSDL.Common.csproj"
+              "D:\\LTCSDL_TH71_Nhom19\\LTCSDL\\LTCSDL.Common\\LTCSDL.Common.csproj": {
+                "projectPath": "D:\\LTCSDL_TH71_Nhom19\\LTCSDL\\LTCSDL.Common\\LTCSDL.Common.csproj"
               }
             }
           }
