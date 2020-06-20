@@ -20,13 +20,22 @@ namespace LTCSDL.Web.Controllers
 
         }
 
-        [HttpPost("get-by-id")]
+        [HttpPost("get-by-id-user")]
         public IActionResult getThongTinNguoiDungById([FromBody] SimpleReq req)
         {
             var res = new SingleRsp();
             res = _svc.Read(req.Id);
             return Ok(res);
 
+        }
+
+        [HttpPost("get-by-id-account")]
+        public IActionResult SearchIDAccount([FromBody] SearchIDThongTinNguoiDungReq req)
+        {
+            var res = new SingleRsp();
+            var acc = _svc.SearchIDAccount(req.Id, req.Keyword);
+            res.Data = acc;
+            return Ok(res);
         }
 
         [HttpPost("get-all")]

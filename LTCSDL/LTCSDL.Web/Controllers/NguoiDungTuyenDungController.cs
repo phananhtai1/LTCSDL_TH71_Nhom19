@@ -20,13 +20,31 @@ namespace LTCSDL.Web.Controllers
 
         }
 
-        [HttpPost("get-by-id")]
-        public IActionResult getNguoiDungTuyenDungById([FromBody] SimpleReq req)
+        //[HttpPost("get-by-id")]
+        //public IActionResult getNguoiDungTuyenDungById([FromBody] SimpleReq req)
+        //{
+        //    var res = new SingleRsp();
+        //    res = _svc.Read(req.Id);
+        //    return Ok(res);
+
+        //}
+
+        [HttpPost("get-by-id-user")]
+        public IActionResult SearchIDNguoiDung([FromBody] SearchIDNguoiDungTuyenDungReq req)
         {
             var res = new SingleRsp();
-            res = _svc.Read(req.Id);
+            var us = _svc.SearchIDNguoiDung(req.Id,req.Keyword);
+            res.Data = us;
             return Ok(res);
+        }
 
+        [HttpPost("get-by-id-employment")]
+        public IActionResult SearchIDTuyenDung([FromBody] SearchIDNguoiDungTuyenDungReq req)
+        {
+            var res = new SingleRsp();
+            var us = _svc.SearchIDTuyenDung(req.Id, req.Keyword);
+            res.Data = us;
+            return Ok(res);
         }
 
         [HttpPost("get-all")]

@@ -22,6 +22,17 @@ namespace LTCSDL.BLL
         }
         #endregion
 
+        public object SearchIDAccount(int id,string keyword)
+        {
+            var acc = All.Where(x => x.MaTaiKhoan == id);
+            var data = acc.ToList();
+            var res = new
+            {
+                Data = data,
+            };
+            return res;
+        }
+
         public object SearchThongTinNguoiDung(string keyword, int page, int size)
         {
             var user = All.Where(x => x.HoVaTen.Contains(keyword));

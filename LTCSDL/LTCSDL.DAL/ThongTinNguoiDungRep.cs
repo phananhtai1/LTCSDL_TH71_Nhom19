@@ -13,7 +13,8 @@ namespace LTCSDL.DAL
         #region -- Overrides 
         public override ThongTinNguoiDung Read(int id)
         {
-            var res = All.FirstOrDefault(p => p.MaNguoiDung == id || p.MaTaiKhoan == id);
+            var res = All.FirstOrDefault(p => p.MaNguoiDung == id);
+            //var res = All.SingleOrDefault(p => p.MaNguoiDung == id);
             return res;
         }
 

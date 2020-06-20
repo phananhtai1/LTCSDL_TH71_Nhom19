@@ -68,5 +68,28 @@ namespace LTCSDL.BLL
             res = _rep.DeleteNguoiDungTuyenDung(nguoiDungTuyenDung);
             return res;
         }
+    
+        public object SearchIDNguoiDung(int id,string keyword)
+        {
+            var us = All.Where(x => x.MaNguoiDung == id);
+            var data = us.ToList();
+            var res = new
+            {
+                Data = data,
+            };
+            return res;
+        }
+
+        public object SearchIDTuyenDung(int id, string keyword)
+        {
+            var us = All.Where(x => x.MaTuyenDung == id);
+            var data = us.ToList();
+            var res = new
+            {
+                Data = data,
+            };
+            return res;
+        }
     }
+
 }

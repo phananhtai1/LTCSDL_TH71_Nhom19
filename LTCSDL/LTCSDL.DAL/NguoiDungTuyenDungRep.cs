@@ -14,6 +14,10 @@ namespace LTCSDL.DAL
         public override NguoiDungTuyenDung Read(int id)
         {
             var res = All.FirstOrDefault(p => p.MaNguoiDung == id || p.MaTuyenDung == id);
+            //var res = 
+            //var m = All.Where(p => p.MaNguoiDung == id);
+            //var data = m.ToList();
+            //var res = 
             return res;
         }
 
