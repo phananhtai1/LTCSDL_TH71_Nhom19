@@ -1,0 +1,15 @@
+*{
+    font-size: 14px;
+}
+.container{
+    box-shadow: 0 2px 70px rgba(110,130,208, .18);
+    margin-bottom: 20px;
+    padding: 10px;
+    height: auto;
+}
+.companies{
+    background: #fff;
+    padding: 10px 20px;
+    border-radius: 25px;
+    margin-top: 40px;
+}
