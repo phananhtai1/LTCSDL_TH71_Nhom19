@@ -20,11 +20,11 @@ namespace LTCSDL.Web.Controllers
 
         }
 
-        [HttpPost("get-by-id")]
-        public IActionResult getTaiKhoanById([FromBody] SimpleReq req)
+        [HttpGet("get-by-id/{MaTaiKhoan}")]
+        public IActionResult getTaiKhoanById(int MaTaiKhoan)
         {
             var res = new SingleRsp();
-            res = _svc.Read(req.Id);
+            res = _svc.Read(MaTaiKhoan);
             return Ok(res);
 
         }

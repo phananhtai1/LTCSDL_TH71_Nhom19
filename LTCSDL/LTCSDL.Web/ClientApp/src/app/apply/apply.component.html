@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="company-details">
+      <div class="job-update">
+        <h1 class="mx-2"><b>{{ctntd.tenChucVu}}</b></h1>
+        <h3 class="mx-2"><b>{{ctntd.tenCongTy}}</b></h3>
+        <button class="mx-2"*ngFor="let z of ctntd.kynang">{{z.tenKyNang}}</button><br>
+        <div class="my-3 mx-2"><i class="fas fa-hand-holding-usd"></i><span>{{ctntd.mucLuong}} VND</span></div>
+        <div class="my-3 mx-2"><i class="fas fa-map-marker-alt"></i><span> {{ctntd.diaChi}}</span></div>
+        <div class="my-3 mx-2"><i class="fas fa-map-marker-alt"></i><span> {{ctntd.thanhPho}}</span></div>
+        <div class="my-3 mx-2"><i class="fas fa-user"></i><span> {{ctntd.capBac}}</span></div>
+        <div class="my-3 mx-2"><i class="fa fa-phone-square fa-rotate-90"></i><span> {{ctntd.soDienThoai}}</span></div>
+        <div class="my-3 mx-2"><i class="fa fa-calendar"></i><span> {{ctntd.hanNopDon}}</span></div>
+        <div class="my-3 mx-2"><i class="fa fa-info-circle"></i><span> {{ctntd.moTaCongViec}}</span></div>
+        <div class="my-3 mx-2"><i class="fa fa-question-circle"></i><span> {{ctntd.yeuCauCongTy}}</span></div>
+      </div>
+    </div>
+    <div class="apply-btn">
+      <div><b>[Ứng viện nốp đơn tại đây]</b></div>
+      <button type="button" class="btn btn-primary" (click)="myclick(i.maTuyenDung)">Apply</button>
+</div>

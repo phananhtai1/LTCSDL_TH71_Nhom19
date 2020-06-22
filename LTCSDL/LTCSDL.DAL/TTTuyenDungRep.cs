@@ -168,7 +168,7 @@ namespace LTCSDL.DAL
 
         public object getTTTDByMaTuyenDung(int kw)
         {
-            List<object> res = new List<object>();
+            object res = new object();
             var cnn = (SqlConnection)Context.Database.GetDbConnection();
             if (cnn.State == ConnectionState.Closed)
                 cnn.Open();
@@ -196,7 +196,7 @@ namespace LTCSDL.DAL
                             MucLuong = row["MucLuong"],
                             HanNopDon = row["HanNopDon"]
                         };
-                        res.Add(x);
+                        res = x;
                     }
                 }
             }

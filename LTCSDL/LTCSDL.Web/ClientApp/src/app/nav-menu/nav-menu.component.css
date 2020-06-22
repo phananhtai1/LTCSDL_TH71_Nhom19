@@ -1,18 +1,48 @@
+
+.container{
+  background-image: linear-gradient(to right, #6db9ef, #7ce08a);
+}
 a.navbar-brand {
   white-space: normal;
-  text-align: center;
-  word-break: break-all;
-}
+  text-align: center;}
 
 html {
   font-size: 14px;
-}
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+  font-size: 18px;
 }
 
 .box-shadow {
   box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+.navbar-nav li{
+  pad: 0 10px;
+}
+
+.navbar-nav li a{
+  float: right;
+  text-align: left;
+}
+
+a.nav-link:hover{
+  color: #007bff !important;
+}
+
+.navbar{
+  background: #fff;
+}
+
+.navbar-toggler{
+  border: none !important;
+}
+
+.nav-link{
+  color: #555 !important;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+#drop{
+  position: absolute;
+  right: 50%;
 }

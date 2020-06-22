@@ -47,7 +47,7 @@ namespace LTCSDL.Web.Controllers
             return Ok(res);
         }
 
-        [HttpPost("delete-KyNang_TuyenDung-by-MaTuyenDung")]
+        [HttpGet("delete-KyNang_TuyenDung-by-MaTuyenDung/{MaTuyenDung}")]
         public IActionResult DeleteKNTDByMaTD(int MaTuyenDung)
         {
             var res = new SingleRsp();
@@ -55,7 +55,7 @@ namespace LTCSDL.Web.Controllers
             return Ok(res);
         }
 
-        [HttpPost("get-by-MaKyNang")]
+        [HttpGet("get-by-MaKyNang/{MaKyNang}")]
         public IActionResult getByMaKyNang(int MaKyNang)
         {
             var res = new SingleRsp();
@@ -63,7 +63,7 @@ namespace LTCSDL.Web.Controllers
             return Ok(res);
         }
 
-        [HttpPost("get-KyNangTuyenDung-by-TenKyNang")]
+        [HttpGet("get-KyNangTuyenDung-by-TenKyNang/{TenKyNang}")]
         public IActionResult getKNTDbyTenKyNang(string TenKyNang)
         {
             var res = new SingleRsp();
@@ -71,7 +71,7 @@ namespace LTCSDL.Web.Controllers
             return Ok(res);
         }
 
-        [HttpPost("get-KyNangTuyenDung-by-MaTuyenDung")]
+        [HttpGet("get-KyNangTuyenDung-by-MaTuyenDung/{MaTuyenDung}")]
         public IActionResult getKNTDbyMaTuyenDung(int MaTuyenDung)
         {
             var res = new SingleRsp();

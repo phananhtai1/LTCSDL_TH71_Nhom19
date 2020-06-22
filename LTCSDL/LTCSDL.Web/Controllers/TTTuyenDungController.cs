@@ -24,11 +24,11 @@ namespace LTCSDL.Web.Controllers
             _svc = new TTTuyenDungSvc();
         }
 
-        [HttpPost("get-by-id")]
-        public IActionResult getTTTuyenDungById(int Id)
+        [HttpGet("get-by-id/{MaTuyenDung}")]
+        public IActionResult getTTTuyenDungById(int MaTuyenDung)
         {
             var res = new SingleRsp();
-            res = _svc.Read(Id);
+            res = _svc.Read(MaTuyenDung);
             return Ok(res);
         }
 
@@ -62,14 +62,14 @@ namespace LTCSDL.Web.Controllers
             return Ok(res);
         }
 
-        [HttpPost("get-by-MaCongTy")]
+        [HttpGet("get-by-MaCongTy/{MaCongTy}")]
         public IActionResult GetTTTuyenDungByMaCongTy(string MaCongTy)
         {
             var res = _svc.GetTTTuyenDungByMaCongTy(MaCongTy);
             return Ok(res);
         }
 
-        [HttpPost("get-by-MaChucVu")]
+        [HttpGet("get-by-MaChucVu/{MaChucVu}")]
         public IActionResult GetTTTuyenDungByMaChucVu(int MaChucVu)
         {
             var res = _svc.GetTTTuyenDungByMaChucVu(MaChucVu);
@@ -84,7 +84,7 @@ namespace LTCSDL.Web.Controllers
             return Ok(res);
         }
 
-        [HttpPost("get-TTTuyenDung-by-TenCongTy-or-TenChucVu")]
+        [HttpGet("get-TTTuyenDung-by-TenCongTy-or-TenChucVu/{key}")]
         public IActionResult getTTTDByTenCongTyOrTenChucVu(string key)
         {
             var res = new SingleRsp();
@@ -92,7 +92,7 @@ namespace LTCSDL.Web.Controllers
             return Ok(res);
         }
 
-        [HttpPost("get-TTTuyenDung-by-MaTuyenDung")]
+        [HttpGet("get-TTTuyenDung-by-MaTuyenDung/{MaTuyenDung}")]
         public IActionResult getTTTDByMaTuyenDung(int MaTuyenDung)
         {
             var res = new SingleRsp();

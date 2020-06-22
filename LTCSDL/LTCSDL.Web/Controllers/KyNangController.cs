@@ -22,11 +22,11 @@ namespace LTCSDL_ViecLamIT.Controllers
             _svc = new KyNangSvc();
         }
 
-        [HttpPost("get-by-id")]
-        public IActionResult layMaKyNang([FromBody] SimpleReq req)
+        [HttpGet("get-by-id/{MaKyNang}")]
+        public IActionResult layMaKyNang(int MaKyNang)
         {
             var res = new SingleRsp();
-            res = _svc.Read(req.Id);
+            res = _svc.Read(MaKyNang);
             return Ok(res);
         }
 

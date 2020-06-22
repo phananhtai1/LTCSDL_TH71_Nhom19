@@ -22,7 +22,7 @@ namespace LTCSDL.Web.Controllers
             _svc = new TTNhaTuyenDungSvc();
         }
 
-        [HttpPost("get-by-id")]
+        [HttpGet("get-by-id/{MaCongTy}")]
         public IActionResult layMaCongTy(string MaCongTy)
         {
             var res = new SingleRsp();
