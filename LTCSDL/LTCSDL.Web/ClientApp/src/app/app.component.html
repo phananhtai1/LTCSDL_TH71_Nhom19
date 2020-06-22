@@ -1,6 +1,20 @@
 <body>
   <app-nav-menu></app-nav-menu>
+<div class="banner text-center" style="height: 70vh;
+width: auto; background-image: url(../assets/findjob.jpg);background-size: 100%;">
+    <h1>JOBS AROUND YOU</h1>
+  </div>
+  <div class="container-fluid">
+    <input type="search" class="d-inline-block col-xl-9 mx-3 my-3 form-control" 
+    placeholder="Nhập tên kỹ năng, tên chức vụ, tên công ty, ....." id="keyword" [(ngModel)]="key">
+    <button class=" d-inline-block col-xl-2 my-3 btn btn-primary "(click)="search(key)">Tìm ngay</button>
+  </div>
+  
   <div class="container">
     <router-outlet></router-outlet>
   </div>
+  <footer class="footer text-center">
+    <h5>@ViecLam IT 2020</h5>
+   </footer>
+   
 </body>

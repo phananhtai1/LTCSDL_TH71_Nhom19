@@ -22,11 +22,11 @@ namespace LTCSDL_ViecLamIT.Controllers
             _svc = new ChucVuSvc();
         }
 
-        [HttpPost("get-by-id")]
-        public IActionResult layMaChucVu([FromBody] SimpleReq req)
+        [HttpGet("get-by-id/{MaChucVu}")]
+        public IActionResult layMaChucVu(int MaChucVu)
         {
             var res = new SingleRsp();
-            res = _svc.Read(req.Id);
+            res = _svc.Read(MaChucVu);
             return Ok(res);
         }
 
