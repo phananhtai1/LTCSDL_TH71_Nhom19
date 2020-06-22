@@ -1,6 +1,6 @@
 .banner{
     height: 70vh;
-    width: auto;;
+    width: auto;
     background-image: url(src/assets/findjob.jpg);
   }
   .search-job{
@@ -15,6 +15,7 @@
     border-radius: 0;
     box-shadow: none !important;
     border: none !important;
+    
   }
   
   .search-job .btn-primary{
@@ -41,11 +42,11 @@
     padding: 10px 20px;
     border-radius: 5px;
   }
-  .job-update fa{
+  /*.job-update fa{
     margin-top: 5px;
     margin-right: 10px;
     color: #77d1b1;
-  }
+  }*/
   .job-update small{
     background: #efefef;
     padding: 1px 5px;

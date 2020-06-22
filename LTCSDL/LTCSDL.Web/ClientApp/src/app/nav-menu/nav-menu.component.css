@@ -41,3 +41,8 @@ a.nav-link:hover{
   font-weight: 600;
   font-size: 16px;
 }
+
+#drop{
+  position: absolute;
+  right: 50%;
+}
